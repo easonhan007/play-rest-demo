@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET     /customers                  controllers.TodoController.getAllCustomers()
+POST    /customers                  controllers.TodoController.createCustomer()
+GET     /customers/:id				controllers.TodoController.getCustomer(id: Long)
+DELETE  /customers/:id				controllers.TodoController.deleteCustomer(id: Long)
+PUT     /customers/:id				controllers.TodoController.updateCustomer(id: Long)
